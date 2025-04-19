@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All You Can Concrete</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Outfit', sans-serif; background-color: #f9f9f9; color: #222; }
+    header { background: linear-gradient(135deg, #333, #111); color: #fff; text-align: center; padding: 60px 20px 40px; }
+    header img { max-width: 100px; margin-bottom: 20px; }
+    header h1 { font-size: 42px; margin: 10px 0 5px; }
+    header p { font-size: 18px; color: #ccc; }
+    .contact-info { margin-top: 15px; font-size: 16px; color: #bbb; }
+    .estimate-btn { margin-top: 25px; background-color: gold; border: none; color: #000; padding: 12px 24px; border-radius: 5px; font-size: 16px; cursor: pointer; }
+    .estimate-btn:hover { background-color: #f0c000; }
+
+    .section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+    .section h2 { text-align: center; font-size: 28px; margin-bottom: 40px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+
+    .gallery-link { text-align: center; margin: 40px 0; }
+    .gallery-link a { font-size: 18px; background: #222; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 6px; }
+    .gallery-link a:hover { background: #444; }
+
+    .testimonial { background-color: #fff; padding: 25px; margin: 20px 0; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+    .testimonial p { font-style: italic; margin: 0 0 10px; }
+    .testimonial span { font-weight: bold; font-size: 14px; color: #555; }
+
+    .review-form { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); margin-top: 20px; }
+    input, textarea, select { width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 6px; font-family: inherit; }
+    button { background-color: #222; color: #fff; border: none; padding: 12px 25px; font-size: 16px; border-radius: 6px; cursor: pointer; transition: background 0.3s ease; }
+    button:hover { background-color: #444; }
+
+    .contact-form { margin-top: 60px; }
+    footer { background-color: #111; color: #aaa; text-align: center; padding: 25px 15px; font-size: 14px; }
+    footer a { color: #aaa; text-decoration: none; margin-left: 10px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/logo.png" alt="Logo">
+    <h1>All You Can Concrete</h1>
+    <p>Forming. Finishing. Foundations. Done Right.</p>
+    <div class="contact-info">
+      Phone: +1 (437) 755-4262<br />
+      Email: allyoucanconcrete@gmail.com
+    </div>
+    <a href="#contact"><button class="estimate-btn">Request a Free Estimate</button></a>
+  </header>
+
+  <section class="section">
+    <h2>Project Showcase</h2>
+    <div class="gallery-link">
+      <a href="gallery.html">View Full Gallery</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial">
+      <p>“Professional, reliable, and top-quality work. Highly recommended!”</p>
+      <span>— Samantha K., Toronto</span>
+    </div>
+    <div class="testimonial">
+      <p>“These guys crushed it. On time, on budget, and super clean finish.”</p>
+      <span>— Mike T., Durham</span>
+    </div>
+    <div class="review-form">
+      <form action="https://formspree.io/f/mnnpepwv" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <select name="rating" required>
+          <option value="">Rate Us</option>
+          <option value="5 Stars">⭐⭐⭐⭐⭐</option>
+          <option value="4 Stars">⭐⭐⭐⭐</option>
+          <option value="3 Stars">⭐⭐⭐</option>
+          <option value="2 Stars">⭐⭐</option>
+          <option value="1 Star">⭐</option>
+        </select>
+        <textarea name="message" rows="5" placeholder="Your Review" required></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-form">
+    <h2>Request a Free Estimate</h2>
+    <p style="text-align:center; margin-bottom: 40px;">We’ll get back to you within 24 hours</p>
+    <form action="https://formspree.io/f/mnnpepwv" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 All You Can Concrete. All rights reserved.
+    <a href="https://instagram.com/allyoucanconcrete" target="_blank">Instagram</a>
+  </footer>
+
+</body>
+</html>
